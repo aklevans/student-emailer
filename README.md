@@ -15,7 +15,7 @@ Workflow:
 
 Excel Format:
 The default column for names is B (StudentManager.DEFAULT_NAME_COLUMN = 1) and can be written as "firstname lastname" with a space or "lastname, firstname"
-The default column for emails is C (StudentManager.DEFAULT_Name_COLUMN = 2) 
+The default column for emails is C (StudentManager.DEFAULT_EMAIL_COLUMN = 2) 
 Currently there is no functionality in the GUI to change these values, though there are the methods setNameColumn() and setEmailColumn() in StudentManager that would allow for that functionality. If you wish to change the default format, I would recommend just changing StudentManager.DEFAULT_NAME_COLUMN and  StudentManager.DEFAULT_Name_COLUMN
 
 Email Settings:
