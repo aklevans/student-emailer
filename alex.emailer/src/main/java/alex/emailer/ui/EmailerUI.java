@@ -26,7 +26,16 @@ public class EmailerUI {
 		f.setSize(1200, 800);
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+		
+		// Menu Bar
+	    
+	    JMenuBar menuBar = new JMenuBar();
+	    JMenu editMenu = new JMenu("Edit");
+	    
+
+	     
 		JPanel pane = new JPanel(new GridBagLayout());
+
 		f.setContentPane(pane);
 		
 		GridBagConstraints c = new GridBagConstraints();
@@ -66,6 +75,8 @@ public class EmailerUI {
 	   }
 	    
 
+	    
+	
 				
 		
 		
@@ -116,6 +127,8 @@ public class EmailerUI {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				
+				
 				JFileChooser fc = new JFileChooser();
 				int r = fc.showOpenDialog(null);
 				if(r == JFileChooser.APPROVE_OPTION) {
@@ -154,7 +167,10 @@ public class EmailerUI {
 		// ImportExcelButton
 		JButton importExcelButton = new JButton("Import Excel");
 		importExcelButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {				
+			public void actionPerformed(ActionEvent e) {	
+
+				JOptionPane.showMessageDialog(f, "Remember, names must be in column " + StudentManager.getInstance().getNameColumnAsChar() + " and emails must be in column "
+													+ StudentManager.getInstance().getEmailColulmnAsChar() + "!");
 				JFileChooser fc = new JFileChooser();
 				int r = fc.showOpenDialog(null);
 				if(r == JFileChooser.APPROVE_OPTION) {
