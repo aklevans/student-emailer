@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"alex.emailer.IO"},{"l":"alex.emailer.Student"},{"l":"alex.emailer.ui"},{"l":"All Packages","url":"allpackages-index.html"}]
